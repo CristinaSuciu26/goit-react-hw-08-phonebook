@@ -1,7 +1,8 @@
 .homeContainer {
   display: flex;
-  justify-content: center;
-  font-size: 30px;
-  font-style: italic;
   flex-direction: column;
+  font-size: 40px;
+  font-style: italic;
+  justify-content: center;
+  margin-top: 40px;
 }
