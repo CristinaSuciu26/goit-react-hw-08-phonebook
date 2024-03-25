@@ -1,0 +1,66 @@
+form {
+  align-items: center;
+  border: 1px solid #48beac;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 0 10px;
+  padding: 30px 0;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 12px;
+  max-width: 350px;
+}
+.loginInput {
+  width: 74%;
+  padding: 13px 20px;
+  margin: 9px 0px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right-color: #48beac;
+  border-bottom-color: #48beac;
+}
+.loginBtn,
+.signupBtn {
+  width: 127px;
+  height: 32px;
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px rgb(211, 214, 211);
+  cursor: pointer;
+  background-color: rgb(243, 234, 234);
+  border-color: #faf7f7;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.signupBtn {
+  margin-left: 15px;
+}
+.loginBtn:hover,
+.signupBtn:hover {
+  background-color: #48beac;
+  color: white;
+  border: none;
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 12px;
+  max-width: 350px;
+  border: 1px solid #48beac;
+  align-items: center;
+}
