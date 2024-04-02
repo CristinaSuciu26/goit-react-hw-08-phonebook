@@ -5,7 +5,7 @@ import Loader from 'components/loader/Loader';
 import UserMenu from 'components/user-menu/UserMenu';
 import { useAuth } from 'components/hooks/useAuth';
 import Footer from 'components/footer/Footer';
-// import { FaAddressBook } from 'react-icons/fa';
+import { FaAddressBook } from 'react-icons/fa';
 
 const SharedLayout = () => {
   const { isLoggedIn } = useAuth();
@@ -17,7 +17,7 @@ const SharedLayout = () => {
           <nav>
             <NavLink to="/" className={styles.navLinkHome} id="home">
               <div className={styles.logoContainer}>
-                {/* <FaAddressBook size={22}/> */}
+                <FaAddressBook size={22}/>
                 <span className={styles.logo}>Contact book</span>
               </div>
             </NavLink>
