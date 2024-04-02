@@ -1,0 +1,103 @@
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+form {
+  align-items: center;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 0 10px;
+  padding: 30px 0;
+
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 42px;
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.registerInput {
+  width: 74%;
+  padding: 13px 20px;
+  margin: 9px 0px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right-color: #333333;
+  border-bottom-color: #333333;
+}
+
+.registerBtn,
+.loginBtn {
+  height: 34px;
+  margin-top: 20px;
+  align-items: center;
+  width: 127px;
+  width: 127px;
+  align-self: center;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #333333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+.registerBtn:hover,
+.loginBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.registerBtn:focus,
+.loginBtn:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 12px;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  border-radius: 5px;
+  color: #333333;
+}
+.loginBtn {
+  margin-left: 25px;
+}
