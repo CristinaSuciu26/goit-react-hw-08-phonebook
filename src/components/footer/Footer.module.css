@@ -16,6 +16,8 @@ svg {
   flex-direction: column;
   justify-content: center;
   padding-top: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .copyright {
   font-weight: 700;
@@ -83,6 +85,7 @@ svg {
   align-items: center;
   padding-right: 69px;
   gap: 28px;
+
 }
 
 .footerIcons {
