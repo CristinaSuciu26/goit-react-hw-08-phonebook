@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
   background-color: #f9f9f9;
   color: #333333;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 code {
