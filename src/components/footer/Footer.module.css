@@ -79,7 +79,7 @@ svg {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 13px;
+  border-radius: 5px;
   align-items: center;
   padding-right: 69px;
   gap: 28px;
