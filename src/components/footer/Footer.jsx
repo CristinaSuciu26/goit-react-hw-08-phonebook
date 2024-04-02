@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+// import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { useAuth } from 'components/hooks/useAuth';
 
 export const Footer = () => {
@@ -39,28 +39,28 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram size={22} className={styles.everyIcon} />
+                {/* <FaInstagram size={22} className={styles.everyIcon} /> */}
               </a>
               <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter size={22} className={styles.everyIcon} />
+                {/* <FaTwitter size={22} className={styles.everyIcon} /> */}
               </a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook size={22} className={styles.everyIcon} />
+                {/* <FaFacebook size={22} className={styles.everyIcon} /> */}
               </a>
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin size={22} className={styles.everyIcon} />
+                {/* <FaLinkedin size={22} className={styles.everyIcon} /> */}
               </a>
             </div>
           </div>
