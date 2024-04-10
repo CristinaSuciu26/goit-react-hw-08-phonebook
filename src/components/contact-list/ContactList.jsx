@@ -15,7 +15,7 @@ const ContactList = () => {
 
   return (
     <table className={styles.contactsTable}>
-      <tbody>
+      <tbody className={styles.tableList}>
         {filteredContacts.map(
           contact =>
             contact.name &&

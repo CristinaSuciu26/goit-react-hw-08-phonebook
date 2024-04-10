@@ -4,10 +4,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: black;
 }
 svg {
-  fill: #333333;
+  fill: black;
 }
 
 .footerContainer {
@@ -17,6 +17,7 @@ svg {
   justify-content: center;
   padding-top: 10px;
   overflow-x: hidden;
+  background-color: white;
 }
 .copyright {
   font-weight: 700;
@@ -24,7 +25,7 @@ svg {
   max-width: 150px;
   font-size: 14px;
   line-height: 1.52;
-  color: #907e82;
+  color: black;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -47,13 +48,13 @@ svg {
   flex-direction: column;
 }
 .liStyle {
-  background-color: rgb(220, 216, 216);
+  background-color: rgb(211, 210, 212);
   border-radius: 5px;
   width: 60px;
   display: flex;
   align-items: center;
   padding: 5px;
-  color: #333333;
+  color: white;
   font-style: italic;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,7 +62,7 @@ svg {
 
 .footerNav,
 .findUsTitle {
-  color: #333333;
+  color: black;
 }
 .iconsContainer {
   display: flex;
@@ -79,12 +80,11 @@ svg {
   flex-direction: row;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  border: none;
+
   align-items: center;
   padding-right: 69px;
   gap: 28px;
-
 }
 
 .footerIcons {

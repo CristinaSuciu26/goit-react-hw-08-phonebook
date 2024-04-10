@@ -7,12 +7,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
-  color: #333333;
-  overflow-x: hidden;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #e2e0e0,
+    #f5f3f3 1.5px,
+    transparent 1.5px,
+    transparent
+  );
+  background-size: 25px 25px;
+  background-color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root {
+  overflow-x: hidden;
 }
