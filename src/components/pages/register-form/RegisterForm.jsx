@@ -31,7 +31,7 @@ const RegisterForm = () => {
 
   return (
     <div className={styles.formContainer}>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.registerForm}>
         <h2 className={styles.title}>Contactbook</h2>
 
         <input

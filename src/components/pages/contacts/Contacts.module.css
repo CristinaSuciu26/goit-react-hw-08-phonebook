@@ -25,8 +25,9 @@ label {
   max-width: 300px;
   flex-direction: column;
   align-items: center;
+
   background-color: white;
-  border: 1px solid #ddd;
+  border: 5px double #b1acac;
   border-radius: 5px;
   padding: 35px;
   margin: 0 auto;

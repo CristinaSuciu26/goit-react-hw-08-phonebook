@@ -26,7 +26,7 @@ const LoginForm = () => {
 
   return (
     <div className={styles.formContainer}>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.loginForm}>
         <input
           className={styles.loginInput}
           type="email"

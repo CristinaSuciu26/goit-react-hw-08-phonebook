@@ -35,11 +35,15 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-right: 240px;
-
+  padding-right: 80px;
 }
 
 .welcomeMsg {
   font-size: 20px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .userContent {
+    padding-right: 270px;
+  }
 }
