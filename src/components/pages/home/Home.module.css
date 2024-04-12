@@ -12,6 +12,7 @@
   color: white;
   padding-top: 30px;
   padding-bottom: 264px;
+  padding-left: 35px;
 }
 .title {
   font-size: 45px;
@@ -25,13 +26,13 @@
 }
 img {
   display: block;
-  width: 120px;
+  width: 90px;
   height: auto;
   transition: width 0.5s ease;
 }
 .imgList {
   position: absolute;
-  margin-left: 2px;
+  right: 11px;
   top: 313px;
   display: flex;
   align-items: center;
@@ -84,7 +85,7 @@ img {
     width: 242px;
   }
   .imgList {
-    margin-left: 99px;
+    right: 410px;
     margin-bottom: 69px;
   }
   .title {

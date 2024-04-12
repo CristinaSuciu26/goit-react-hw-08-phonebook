@@ -46,9 +46,10 @@ svg {
   display: flex;
   gap: 9px;
   font-size: 14px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   align-items: baseline;
   flex-direction: column;
+  margin-left: 14px;
 }
 .liStyle {
   border-radius: 5px;

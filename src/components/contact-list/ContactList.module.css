@@ -2,7 +2,8 @@
   height: 34px;
   margin-top: 20px;
   align-items: center;
-  width: 127px;
+  width: 100px;
+  margin-bottom: 10px;
   align-self: center;
   background-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
@@ -21,7 +22,7 @@
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .contactsListBtn:hover {
@@ -29,7 +30,7 @@
   transform: translate3d(0, 2px, 0);
 }
 .contactsTable {
-  width: 90%;
+  width: 121%;
   border-collapse: collapse;
   margin-top: 10px;
   font-family: Playfair Display;
@@ -77,6 +78,7 @@ tr:hover {
     background: #555;
   }
 }
+
 @media screen and (min-width: 768px) {
   th,
   td {
