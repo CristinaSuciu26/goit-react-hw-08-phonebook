@@ -23,7 +23,7 @@ const RegisterForm = () => {
 
       navigate('/login');
     } catch (error) {
-      if (error.response && error.response.status === 409) {
+      if (error.response && error.response.status === 400) {
         alert('An account with this email already exists.');
       } else {
         alert('Registration failed. Please try again later.');
