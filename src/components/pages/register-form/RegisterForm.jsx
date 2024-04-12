@@ -20,8 +20,10 @@ const RegisterForm = () => {
     form.reset();
 
     const existentAccount = form.elements.email.value;
-    if (existentAccount) {
+    if (!existentAccount) {
+      alert('An account with this email already exists.');
     }
+
     navigate('/login');
   };
 
@@ -32,8 +34,6 @@ const RegisterForm = () => {
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit} className={styles.registerForm}>
-        <h2 className={styles.title}>Contactbook</h2>
-
         <input
           className={styles.registerInput}
           type="text"

@@ -10,7 +10,6 @@ const setAuthHeader = token => {
 const clearAuthHeader = () => {
   axios.defaults.headers.common.Authorization = '';
 };
-
 export const register = createAsyncThunk(
   'auth/register',
   async (credentials, thunkAPI) => {
@@ -19,11 +18,14 @@ export const register = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      if (error.response && error.response.status === 400) {
+        return thunkAPI.rejectWithValue('User already exists');
+      } else {
+        return thunkAPI.rejectWithValue('Registration failed');
+      }
     }
   }
 );
-
 export const logIn = createAsyncThunk(
   'auth/login',
   async (credentials, thunkAPI) => {
@@ -32,7 +34,14 @@ export const logIn = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      console.log('Error response:', error.response.data);
+
+      if (error.response && error.response.status === 400) {
+        alert('An error occurred. Please try again.');
+        return thunkAPI.rejectWithValue('Invalid credentials or request');
+      } else {
+        return thunkAPI.rejectWithValue('Login failed');
+      }
     }
   }
 );

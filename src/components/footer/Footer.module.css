@@ -4,10 +4,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 svg {
-  fill: black;
+  fill: white;
 }
 
 .footerContainer {
@@ -15,9 +15,10 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #000000;
   overflow-x: hidden;
-  background-color: white;
 }
 .copyright {
   font-weight: 700;
@@ -25,7 +26,8 @@ svg {
   max-width: 150px;
   font-size: 14px;
   line-height: 1.52;
-  color: black;
+  color: white;
+
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -33,6 +35,7 @@ svg {
   transform: scale(1.2);
   cursor: pointer;
 }
+
 .copyrightBox {
   display: flex;
   align-items: center;
@@ -48,7 +51,6 @@ svg {
   flex-direction: column;
 }
 .liStyle {
-  background-color: rgb(211, 210, 212);
   border-radius: 5px;
   width: 60px;
   display: flex;
@@ -60,10 +62,6 @@ svg {
     color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footerNav,
-.findUsTitle {
-  color: black;
-}
 .iconsContainer {
   display: flex;
   flex-direction: column;
@@ -78,8 +76,6 @@ svg {
 .contentFooter {
   display: flex;
   flex-direction: row;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: none;
 
   align-items: center;
@@ -106,7 +102,7 @@ svg {
   .listContainer {
     display: flex;
     gap: 9px;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 50px;
     align-items: baseline;
     flex-direction: row;

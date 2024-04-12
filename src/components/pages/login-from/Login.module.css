@@ -1,7 +1,6 @@
 .loginForm {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
   align-items: center;
-  border: 5px double #b1acac;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -28,6 +27,7 @@
   box-sizing: border-box;
   border-top: none;
   border-left: none;
+  background-color: rgba(255, 255, 255, 0.5);
   border-right-color: #333333;
   border-bottom-color: #333333;
 }
@@ -38,17 +38,14 @@
   flex-grow: 1;
   justify-content: center;
   margin-top: 12px;
-  max-width: 350px;
-
-  background-color: #fff;
+  margin-left: 19px;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 5px double #b1acac;
-
   align-items: center;
   border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
 }
 
 .loginBtn,
@@ -59,7 +56,7 @@
   width: 127px;
   width: 127px;
   align-self: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;

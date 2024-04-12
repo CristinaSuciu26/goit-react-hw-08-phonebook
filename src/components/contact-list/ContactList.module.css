@@ -4,7 +4,7 @@
   align-items: center;
   width: 127px;
   align-self: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
@@ -37,7 +37,6 @@
 
 th,
 td {
-  padding: 4px;
   font-size: 14px;
   text-align: left;
   width: 100%;
@@ -63,7 +62,7 @@ tr:hover {
   max-height: 250px;
   /* Scrollbar styling */
   &::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
   }
 
   &::-webkit-scrollbar-track {

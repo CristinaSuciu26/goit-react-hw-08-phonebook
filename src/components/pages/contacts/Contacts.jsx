@@ -18,11 +18,11 @@ export const Contacts = () => {
   return (
     <div className={styles.container}>
       <div className={styles.phonebookContainer}>
-        <h1>Phonebook</h1>
+        <h1 className={styles.contactsTitle}>Phonebook</h1>
         <ContactForm />
       </div>
       <div className={styles.contactsContainer}>
-        <h2>Contacts</h2>
+        <h2 className={styles.contactsTitle}>Contacts</h2>
         <Filter />
         <ContactList />
       </div>

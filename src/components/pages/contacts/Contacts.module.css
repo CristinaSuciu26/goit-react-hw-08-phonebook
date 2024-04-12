@@ -1,11 +1,12 @@
-h1,
-h2 {
+.contactsTitle {
   font-size: 25px;
   display: flex;
   justify-content: center;
+  color: #fff;
 }
 input {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px 20px;
   margin: 5px 0;
   box-sizing: border-box;
@@ -26,8 +27,7 @@ label {
   flex-direction: column;
   align-items: center;
 
-  background-color: white;
-  border: 5px double #b1acac;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   padding: 35px;
   margin: 0 auto;
@@ -38,12 +38,12 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 97%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
-  padding-left: 20px;
+  padding-left: 14px;
 }
 .userName {
   display: flex;

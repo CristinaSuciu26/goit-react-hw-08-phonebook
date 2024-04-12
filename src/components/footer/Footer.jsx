@@ -11,7 +11,6 @@ export const Footer = () => {
       <div className={styles.contentFooter}>
         {!isLoggedIn && (
           <ul className={styles.listContainer}>
-            <h3 className={styles.footerNav}>Navigation</h3>
             <li className={styles.liStyle}>
               <Link to="/" className={styles.navLink} id="home">
                 <strong>Home</strong>
@@ -32,7 +31,6 @@ export const Footer = () => {
 
         {!isLoggedIn && (
           <div className={styles.iconsContainer}>
-            <h3 className={styles.findUsTitle}>Contact</h3>
             <div className={styles.footerIcons}>
               <a
                 href="https://www.instagram.com/"

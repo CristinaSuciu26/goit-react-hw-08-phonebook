@@ -1,37 +1,42 @@
 import React from 'react';
 import styles from './Home.module.css';
-import image01 from '../../images/image01.jpg';
-import image02 from '../../images/image02.jpg';
-import image03 from '../../images/image03.jpg';
-import image04 from '../../images/image04.jpg';
+import img02 from '../../images/img02.jpg';
+import img01 from '../../images/img01.jpg';
+import img03 from '../../images/img03.jpg';
 
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
-      <h2 className={styles.homeTitle}>
-        Welcome to your personalized contact management
-      </h2>
+      <div className={styles.titleContainer}>
+        <h2 className={styles.title}>
+          Revolutionizing Contact Management{' '}
+          <span className={styles.titleDescription}>
+            Manage Your Contacts with Ease
+          </span>
+        </h2>
+      </div>
 
-      <ul className={styles.imgList}>
-        <li>
-          <img src={image01} alt="flowers and books" />
-          <p>Find joy</p>
-        </li>
-        <li>
-          <img src={image02} alt="contact book" width="200" />
-          <p>In</p>
-        </li>
-        <li>
-          <img src={image03} alt="spring flowers" width="200" />
-          <div>       <p>Whatever</p></div>
-   
-        </li>
-        <li>
-          <img src={image04} alt="books aeshtetic" />
-          <p>You do</p>
-        </li>
-      </ul>
-      <div className={styles.light}></div>
+      <div className={styles.mainContent}>
+        <ul className={styles.imgList}>
+          <li>
+            <img src={img01} alt="books aeshtetic" />
+          </li>
+          <li>
+            <img src={img03} alt="books aeshtetic" />
+          </li>
+          <li>
+            <img src={img02} alt="books aeshtetic" />
+          </li>
+        </ul>
+        <div className={styles.homeParagraph}>
+          <p>
+            At Contact Book, we believe that managing your contacts should be
+            easy and stress-free. That's why we've created an app that is
+            user-friendly, efficient, and designed to meet all your contact
+            management needs.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
