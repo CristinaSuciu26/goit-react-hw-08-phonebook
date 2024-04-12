@@ -6,25 +6,29 @@ import { useNavigate } from 'react-router-dom';
 const RegisterForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const form = e.currentTarget;
 
-    dispatch(
-      register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
-    );
-    form.reset();
+    const registrationData = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      password: form.elements.password.value,
+    };
 
-    const existentAccount = form.elements.email.value;
-    if (!existentAccount) {
-      alert('An account with this email already exists.');
+    try {
+      await dispatch(register(registrationData));
+
+      form.reset();
+
+      navigate('/login');
+    } catch (error) {
+      if (error.response && error.response.status === 409) {
+        alert('An account with this email already exists.');
+      } else {
+        alert('Registration failed. Please try again later.');
+      }
     }
-
-    navigate('/login');
   };
 
   const handleLogInClick = () => {
