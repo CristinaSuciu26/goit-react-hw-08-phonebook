@@ -3,7 +3,7 @@ import styles from './ContactForm.module.css';
 import { addContact } from '../redux/contacts/operations';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from '../redux/contacts/selectors';
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
 import { IoPersonSharp } from 'react-icons/io5';
 
 const ContactForm = () => {
