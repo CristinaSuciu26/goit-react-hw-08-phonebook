@@ -30,30 +30,28 @@ const Home = () => {
         </ul>
 
         <div className={styles.homeParagraph}>
-          <div className={styles.firstParagraph}>
+          <div>
             <p>
-              <h2 className={styles.storyTitle}>Our story</h2>
-              As the world becomes more connected, managing your contacts can be
-              a daunting task. That's why we created Contact Book - to simplify
-              your life and streamline your communication. Our app is designed
-              to make managing your contacts easy, with a clean, modern, and
-              attractive design.
+              <h2 className={styles.storyTitle}>Contact Book's story</h2>
+              As the world becomes more connected, managing contacts can be a
+              daunting task. That's why Contact Book was created - to simplify
+              life and streamline communication. The app is designed to make
+              managing contacts easy, with a clean and attractive design.
               <p>
-                We believe that managing your contacts should be easy and
-                stress-free. This app is user-friendly, efficient, and designed
-                to meet all your contact management needs.
+                Managing contacts should be easy and stress-free. This app is
+                user-friendly, efficient, and designed to meet all contact
+                management needs.
               </p>
             </p>
           </div>
-          <div className={styles.secondParagraph}>
+          <div>
             <p>
               <h2 className={styles.storyTitle}>
                 How do I get started with Contact Book?
               </h2>
               Getting started with Contact Book is easy. Simply create an
-              account, and start managing your contacts with ease. With our
-              user-friendly interface and intuitive design, you'll be up and
-              running in no time.
+              account, and start managing your contacts with ease. With its
+              user-friendly interface, you'll be up and running in no time.
             </p>
           </div>
         </div>
