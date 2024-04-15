@@ -19,7 +19,11 @@ export const register = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      if (error.response && error.response.status === 400) {
+        return alert('An account with this email already exists.');
+      } else {
+        return thunkAPI.rejectWithValue(error.message);
+      }
     }
   }
 );

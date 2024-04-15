@@ -26,13 +26,13 @@
 }
 img {
   display: block;
-  width: 130px;
+  width: 135px;
   height: auto;
   transition: width 0.5s ease;
 }
 .imgList {
   position: absolute;
-  right: 38px;
+  right: 32px;
   top: 313px;
   display: flex;
   align-items: center;
@@ -78,21 +78,23 @@ img {
 }
 .mainContent {
   display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .homeParagraph {
     font-size: 22px;
-    width: 50%;
+    width: 80%;
+    padding-top: 200px;
   }
   .storyTitle {
     font-size: 26px;
   }
   img {
-    width: 200px;
+    width: 230px;
   }
 
   .imgList {
-    right: 45px;
+    right: 144px;
   }
 
   .title {
@@ -101,20 +103,29 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .homeParagraph {
+    font-size: 24px;
+    width: 40%;
+    padding-top: 50px;
+  }
   img {
-    width: 250px;
+    width: 280px;
   }
   .title {
     width: 26%;
   }
   .imgList {
-    top: 448px;
+    right: 107px;
+    top: 450px;
   }
   .titleContainer {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1480px) {
+  .homeParagraph {
+    padding-left: 175px;
+  }
   .imgList {
     top: 350px;
     right: 60px;

@@ -26,7 +26,7 @@ const RegisterForm = () => {
       if (error.response && error.response.status === 400) {
         alert('An account with this email already exists.');
       } else {
-        alert('Registration failed. Please try again later.');
+        alert('Registration failed. Please try again.');
       }
     }
   };
