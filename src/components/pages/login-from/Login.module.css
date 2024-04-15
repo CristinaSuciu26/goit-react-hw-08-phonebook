@@ -22,7 +22,7 @@
 }
 .loginInput {
   width: 74%;
-  padding: 13px 20px;
+  padding: 13px 35px;
   margin: 9px 0px;
   box-sizing: border-box;
   border-top: none;
@@ -88,4 +88,23 @@
 }
 .signupBtn {
   margin-left: 26px;
+}
+.loginIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.loginIconEnvelope {
+  position: relative;
+  top: 46%;
+  right: 103px;
+  fill: black;
+}
+.loginIconPassword {
+  position: relative;
+  top: 45%;
+  right: 104px;
+  fill: black;
 }

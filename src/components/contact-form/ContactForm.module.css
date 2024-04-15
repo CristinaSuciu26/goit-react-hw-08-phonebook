@@ -17,7 +17,7 @@
   width: 127px;
   width: 127px;
   align-self: center;
-  background-color: rgba(255, 255, 255, 0.7); 
+  background-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
@@ -39,4 +39,23 @@
 .addContactBtn:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
+}
+.contactsIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.contactsIconPhone {
+  position: absolute;
+  fill: black;
+  top: 25%;
+  left: 16px;
+}
+.contactsIconPerson {
+  position: absolute;
+  fill: black;
+  top: 22%;
+  left: 13px;
 }

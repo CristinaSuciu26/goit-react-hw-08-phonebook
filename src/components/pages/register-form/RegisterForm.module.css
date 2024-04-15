@@ -27,7 +27,7 @@
 }
 .registerInput {
   width: 74%;
-  padding: 13px 20px;
+  padding: 13px 35px;
   margin: 9px 0px;
   box-sizing: border-box;
   border-top: none;
@@ -92,5 +92,32 @@
   font-size: 18px;
 }
 .loginBtn {
-  margin-left: 40px;
+  margin-left: 31px;
+}
+.reactIconEnvelope {
+  position: absolute;
+  top: 33%;
+  right: 262px;
+  fill: black;
+}
+
+.reactIconPerson {
+  position: absolute;
+  top: 31%;
+  left: 52px;
+  fill: black;
+}
+.reactIconPassword {
+  position: absolute;
+  fill: black;
+  top: 30%;
+  left: 52px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }

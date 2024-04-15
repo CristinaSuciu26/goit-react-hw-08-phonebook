@@ -2,6 +2,8 @@ import { useDispatch } from 'react-redux';
 import { register } from 'components/redux/auth/operations';
 import styles from './RegisterForm.module.css';
 import { useNavigate } from 'react-router-dom';
+import { FaEnvelope } from 'react-icons/fa';
+import { IoPersonSharp, IoLockClosedSharp } from 'react-icons/io5';
 
 const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -38,31 +40,38 @@ const RegisterForm = () => {
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit} className={styles.registerForm}>
-        <input
-          className={styles.registerInput}
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-        />
-
-        <input
-          className={styles.registerInput}
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-
-        <input
-          className={styles.registerInput}
-          type="password"
-          name="password"
-          placeholder="Password (minimum 8 characters)"
-          required
-          pattern=".{8,}"
-          title="The password must be at least 8 characters"
-        />
+        <div className={styles.iconContainer}>
+          <IoPersonSharp className={styles.reactIconPerson} />
+          <input
+            className={styles.registerInput}
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div className={styles.iconContainer}>
+          <FaEnvelope className={styles.reactIconEnvelope} />
+          <input
+            className={styles.registerInput}
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div className={styles.iconContainer}>
+          <IoLockClosedSharp className={styles.reactIconPassword} />
+          <input
+            className={styles.registerInput}
+            type="password"
+            name="password"
+            placeholder="Password (min. 8 characters)"
+            required
+            pattern=".{8,}"
+            title="The password must be at least 8 characters"
+          />
+        </div>
 
         <button type="submit" className={styles.registerBtn}>
           Register
