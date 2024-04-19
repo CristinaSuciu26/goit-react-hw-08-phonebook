@@ -9,8 +9,9 @@ const UserMenu = () => {
   return (
     <div className={styles.userContent}>
       <p className={styles.welcomeMsg}>Welcome, {user.name}</p>
+
       <button className={styles.logoutBtn} onClick={() => dispatch(logOut())}>
-        Log Out
+        Log out
       </button>
     </div>
   );

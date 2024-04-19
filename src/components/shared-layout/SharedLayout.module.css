@@ -25,10 +25,6 @@
 .contentContainer {
   display: flex;
   justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-right: 39px;
-
 }
 .contentContainer form {
   margin-left: 20px;

@@ -30,7 +30,7 @@ const LoginForm = () => {
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
         <div className={styles.loginIconContainer}>
-          <FaEnvelope className={styles.loginIconEnvelope}/>
+          <FaEnvelope className={styles.loginIconEnvelope} />
           <input
             className={styles.loginInput}
             type="email"

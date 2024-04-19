@@ -1,8 +1,27 @@
 .contacts {
   display: flex;
-  flex-direction: column;
   gap: 10px;
   padding-left: 13px;
-  width: 67%;
+  width: 100%;
   color: #fff;
+}
+.filterInput {
+  width: 94%;
+  font-size: 15px;
+  color: white;
+  border-radius: 6px;
+}
+.filterContainer {
+  position: relative;
+}
+.filterIcon {
+  position: absolute;
+  top: 29%;
+  left: 12px;
+  fill: white;
+}
+@media screen and (min-width: 768px) {
+  .filterInput {
+    width: 100%;
+  }
 }
