@@ -31,11 +31,17 @@
   padding: 13px 36px;
   margin: 9px 0px;
   box-sizing: border-box;
-  border-top: none;
-  border-left: none;
+  border: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  border-right-color: #333333;
-  border-bottom-color: #333333;
+  border-radius: 4px;
+  transition: all 135ms ease-in-out;
+}
+
+.registerInput:focus {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: rgba(68, 67, 67, 0.5);
+  color: white;
 }
 
 .registerBtn,
@@ -89,7 +95,7 @@
   font-size: 18px;
 }
 .loginBtn {
-  margin-left: 30px;
+  margin-left: 29px;
 }
 
 .reactIconEnvelope {

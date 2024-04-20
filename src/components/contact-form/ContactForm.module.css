@@ -45,22 +45,15 @@
     sans-serif;
   font-size: 17px;
   height: 40px;
-  line-height: 40px;
-  outline: 0;
-  overflow: hidden;
   padding: 0 20px;
-  pointer-events: auto;
-  position: relative;
   text-align: center;
-  vertical-align: top;
-  white-space: nowrap;
   width: 100%;
   border: 0;
   margin-top: 10px;
   transition: box-shadow 0.2s;
 }
 
-.button-addContactBtnModal:hover {
+.addContactBtnModal:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 
@@ -70,6 +63,10 @@
   align-items: center;
   width: 100%;
   position: relative;
+
+}
+.contactsIconContainer input{
+  border-radius: 10px;
 }
 .contactsIconPhone {
   position: absolute;
