@@ -33,6 +33,9 @@
     sans-serif;
   border-radius: 6px;
 }
+.addContactBtn:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
 
 .addContactBtnModal {
   background-image: linear-gradient(-180deg, #ef4765, #ff9a5a);
@@ -63,22 +66,23 @@
   align-items: center;
   width: 100%;
   position: relative;
-
 }
-.contactsIconContainer input{
+.contactsIconContainer input {
   border-radius: 10px;
 }
 .contactsIconPhone {
   position: absolute;
-  fill: #fff;
+  fill: #000000;
   top: 25%;
   left: 16px;
+  width: 17px;
 }
 .contactsIconPerson {
   position: absolute;
-  fill: #fff;
-  top: 22%;
+  fill: #000000;
+  top: 25%;
   left: 13px;
+  width: 17px;
 }
 .btnContainer {
   position: relative;

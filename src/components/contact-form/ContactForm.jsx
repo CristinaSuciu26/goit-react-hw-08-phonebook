@@ -7,7 +7,6 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { IoPersonSharp } from 'react-icons/io5';
 import Modal from 'react-modal';
 import { GrAdd } from 'react-icons/gr';
-
 Modal.setAppElement('#root');
 
 const ContactForm = () => {
@@ -16,6 +15,7 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const modalStyles = {
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -44,7 +44,14 @@ const ContactForm = () => {
   };
 
   const handleNumberChange = event => {
-    setNumber(event.target.value);
+    const inputNumber = event.target.value;
+    if (isNaN(inputNumber)) {
+      alert('Please enter only numbers in this field');
+      resetForm();
+      return;
+    }
+
+    setNumber(inputNumber);
   };
 
   const openModal = () => {
@@ -53,6 +60,7 @@ const ContactForm = () => {
 
   const closeModal = () => {
     setModalIsOpen(false);
+    resetForm();
   };
 
   const handleSubmit = () => {

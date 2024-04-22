@@ -26,13 +26,14 @@ label {
   display: flex;
   width: 83%;
   padding: 16px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 49px;
   margin-left: 22px;
   color: #fff;
+  min-height: 200px;
 }
 .phonebookContainer {
   display: flex;
@@ -97,5 +98,4 @@ label {
   .contactsContainer {
     margin-bottom: 108px;
   }
-  
 }
