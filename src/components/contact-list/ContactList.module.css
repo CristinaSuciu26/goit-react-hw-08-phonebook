@@ -44,6 +44,7 @@ td {
   cursor: pointer;
   padding-left: 14px;
   justify-content: center;
+  border-bottom: 1px solid #b68080;
 }
 
 th {
