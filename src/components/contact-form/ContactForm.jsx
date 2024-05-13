@@ -24,6 +24,7 @@ const ContactForm = () => {
       backgroundColor: '#98391C',
       paddingTop: '95px',
       paddingBottom: '95px',
+      // paddingRight: '35px',
       top: '50%',
       left: '50%',
       right: 'auto',

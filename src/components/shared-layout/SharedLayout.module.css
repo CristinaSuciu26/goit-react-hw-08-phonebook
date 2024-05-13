@@ -6,7 +6,7 @@
 }
 .contactTitle {
   color: white;
-  font-size: 35px;
+  font-size: 18px;
   justify-content: center;
   display: flex;
 }
@@ -59,9 +59,9 @@
   .layoutContainer {
     gap: 160px;
   }
-  .contactTitle {
+  /* .contactTitle {
     font-size: 38px;
-  }
+  } */
   .contentContainer {
     padding-right: 0px;
   }

@@ -13,13 +13,13 @@ const SharedLayout = () => {
   return (
     <div className={styles.mainContainer}>
       {!isLoggedIn && <h2 className={styles.contactTitle}>Contact Book</h2>}
+      {/* <FaAddressBook size={22} /> */}
       {isLoggedIn && <UserMenu />}
       <div className={styles.layoutContainer}>
         {!isLoggedIn && (
           <nav>
             <NavLink to="/" className={styles.navLinkHome} id="home">
               <div className={styles.logoContainer}>
-                <FaAddressBook size={22} />
                 <span className={styles.logo}>Home</span>
               </div>
             </NavLink>
