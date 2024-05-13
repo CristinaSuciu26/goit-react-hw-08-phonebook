@@ -5,7 +5,7 @@ import Loader from 'components/loader/Loader';
 import UserMenu from 'components/user-menu/UserMenu';
 import { useAuth } from 'components/hooks/useAuth';
 import Footer from 'components/footer/Footer';
-import { FaAddressBook } from 'react-icons/fa';
+// import { FaAddressBook } from 'react-icons/fa';
 
 const SharedLayout = () => {
   const { isLoggedIn } = useAuth();
